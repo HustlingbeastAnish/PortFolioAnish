@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.about {
+  background-image: url("./aboutimages/imgs/aboutimg4.jpg");
+  width: 100%;
+  height: 100vh;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  /* opacity: 0.9; */
+}
+.content_about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.anishlogo {
+  height: 252px;
+  width: 266px;
+  border-radius: 330px;
+  transition: all 1s ease-in-out;
+}
+.anishlogo:hover {
+  transform: scale(1.5);
+}

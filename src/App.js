@@ -1,24 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import Navbar from "./components/Navbar/navbar";
+import About from "./components/About/about";
+import Home from "./components/Home/home";
+import Project from "./components/Project/project";
+import Experience from "./components/Experience/experience";
+import { motion } from "framer-motion";
+
+// Animation Stuffs
+const NavbarVariant = {
+  hidden: {
+    y: "-10vh",
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 1.2,
+      duration: 1.5,
+      type: "spring",
+      stiffness: 130,
+    },
+  },
+};
+
+const HomeVariant = {
+  hidden: { x: "-100vw", y: "100vh" },
+  visible: {
+    x: "0vw",
+    y: "7.5vh",
+    transition: {
+      delay: 0.7,
+      duration: 1.5,
+      type: "spring",
+      stiffness: 70,
+      // mass: 0.4,
+      // damping: 8,
+    },
+  },
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
+        <Navbar />
+      </motion.div>
+
+      <motion.div variants={HomeVariant} initial="hidden" animate="visible">
+        <Home />
+      </motion.div>
+      <About />
+      <Experience />
+      <Project />
+    </>
   );
 }
 
