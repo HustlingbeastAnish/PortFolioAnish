@@ -6,7 +6,8 @@ import Home from "./components/Home/home";
 import Project from "./components/Project/project";
 import Experience from "./components/Experience/experience";
 import { motion } from "framer-motion";
-
+import Footer from "./components/Footer/footer";
+import Codeforces from "./components/Codeforces/Codeforces";
 // Animation Stuffs
 const NavbarVariant = {
   hidden: {
@@ -14,7 +15,7 @@ const NavbarVariant = {
     opacity: 0,
   },
   visible: {
-    y: 0,
+    y: "-3.5vh",
     opacity: 1,
     transition: {
       delay: 1.2,
@@ -29,7 +30,7 @@ const HomeVariant = {
   hidden: { x: "-100vw", y: "100vh" },
   visible: {
     x: "0vw",
-    y: "7.5vh",
+    y: "4.6vh",
     transition: {
       delay: 0.7,
       duration: 1.5,
@@ -44,16 +45,18 @@ const HomeVariant = {
 function App() {
   return (
     <>
-      <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
+      {/* <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
         <Navbar />
-      </motion.div>
+      </motion.div> */}
 
-      <motion.div variants={HomeVariant} initial="hidden" animate="visible">
+      {/* <motion.div variants={HomeVariant} initial="hidden" animate="visible">
         <Home />
       </motion.div>
       <About />
       <Experience />
       <Project />
+      <Footer /> */}
+      <Codeforces />
     </>
   );
 }
