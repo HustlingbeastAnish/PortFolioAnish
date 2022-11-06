@@ -8,6 +8,8 @@ import Experience from "./components/Experience/experience";
 import { motion } from "framer-motion";
 import Footer from "./components/Footer/footer";
 import Codeforces from "./components/Codeforces/Codeforces";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 // Animation Stuffs
 const NavbarVariant = {
   hidden: {
@@ -45,18 +47,20 @@ const HomeVariant = {
 function App() {
   return (
     <>
-      {/* <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
-        <Navbar />
-      </motion.div> */}
+      <Router>
+        <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
+          <Navbar />
+        </motion.div>
 
-      {/* <motion.div variants={HomeVariant} initial="hidden" animate="visible">
-        <Home />
-      </motion.div>
-      <About />
-      <Experience />
-      <Project />
-      <Footer /> */}
-      <Codeforces />
+        <motion.div variants={HomeVariant} initial="hidden" animate="visible">
+          <Home />
+        </motion.div>
+        <About />
+        <Experience />
+        <Project />
+        <Codeforces />
+        <Footer />
+      </Router>
     </>
   );
 }

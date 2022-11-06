@@ -10,7 +10,11 @@
   display: flex;
   flex-direction: column;
   color: white;
+  align-items: center;
   /* opacity: 0.9; */
+}
+.carousel .item {
+  height: 300px;
 }
 .content_about {
   text-align: center;
@@ -19,8 +23,8 @@
   /* justify-content: center; */
 }
 .anishlogo {
-  height: 252px;
-  width: 266px;
+  height: 152px;
+  width: 166px;
   border-radius: 330px;
   transition: all 1s ease-in-out;
 }
@@ -31,11 +35,7 @@
   width: 640px;
   height: 360px;
 }
-.result1 {
-  width: 600px;
-  height: 420px;
-}
-.result3 {
+#result1 {
   width: 600px;
   height: 420px;
 }

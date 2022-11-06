@@ -13,23 +13,148 @@ function about() {
           <h2>About Me!</h2>
           <hr />
         </div>
-        <div className="container d-flex">
+        <div className="container d-flex align-items-center">
           <img src={Anishlogo} alt="..." srcSet="" className="anishlogo" />
           <div className="containera">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non,
-              sapiente. Optio quasi, dolor quia doloribus temporibus error ea
-              aspernatur quod rem hic omnis cumque! Fuga fugiat architecto natus
-              dignissimos aut. Perferendis sit aspernatur nihil eligendi
-              veritatis hic fugiat sapiente, dolor laborum ut quisquam deleniti
-              amet, corrupti exercitationem nemo necessitatibus porro recusandae
-              nisi! Omnis cumque repudiandae iste autem reiciendis dignissimos.
-              Consequuntur perferendis ut ab maiores suscipit pariatur labore
-              eius, nostrum aperiam illo ad accusamus voluptatem qui vel sed
-              dolores! Illo, praesentium soluta id libero, asperiores cumque
-              minima dolore eligendi accusamus totam minus veritatis repellendus
-              reiciendis voluptas sed accusantium perspiciatis culpa facere?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+              quis quas, nemo debitis ex dolorum numquam amet! Accusantium nihil
+              numquam incidunt adipisci voluptatum delectus assumenda
+              voluptatibus consequuntur? Architecto, magni distinctio veniam
+              error culpa cumque inventore voluptas non debitis facilis maiores
+              nihil accusantium facere doloribus. Amet autem et illum sit aut?
             </p>
+          </div>
+        </div>
+        <div
+          className="container mt-2 "
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            id="carouselExampleDark"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div
+              class="carousel-inner"
+              style={{
+                height: "350px",
+              }}
+            >
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div className="card h-100">
+                  <img
+                    className="card-img-top"
+                    src="https://images.unsplash.com/photo-1599008633840-052c7f756385?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <p
+                    className=""
+                    style={{
+                      color: "black",
+                      marginBottom: "335px",
+                    }}
+                  >
+                    Completed Class 10 From DBMS Kadma High School with 90.2% in
+                    the year 2019
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div className="card h-100">
+                  <img
+                    className="card-img-top"
+                    src="https://images.unsplash.com/photo-1599008633840-052c7f756385?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <p
+                    className=""
+                    style={{
+                      color: "black",
+                      marginBottom: "335px",
+                    }}
+                  >
+                    Completed Class 10 From DBMS Kadma High School with 90.2% in
+                    the year 2019
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div className="card h-100">
+                  <img
+                    className="card-img-top"
+                    src="https://images.unsplash.com/photo-1599008633840-052c7f756385?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <p
+                    className=""
+                    style={{
+                      color: "black",
+                      marginBottom: "335px",
+                    }}
+                  >
+                    Completed Class 10 From DBMS Kadma High School with 90.2% in
+                    the year 2019
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>

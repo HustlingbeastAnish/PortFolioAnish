@@ -3,8 +3,11 @@ import React from "react";
 function navbar(props) {
   return (
     <>
-      <nav className="navbar fixed-top navbar-expand-lg bg-dark text-light">
-        <div className="container-fluid">
+      <nav
+        className="navbar fixed-top navbar-expand-lg bg-dark text-light"
+        id="navv"
+      >
+        <div className="container-fluid" id="nav">
           <a className="navbar-brand text-light" href="/#">
             {props.title}
           </a>
@@ -47,7 +50,7 @@ function navbar(props) {
               </li>
               <li className="nav-item">
                 <a className="nav-link text-light" href="/#">
-                  Socials
+                  Codeforces
                 </a>
               </li>
             </ul>
