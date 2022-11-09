@@ -1,6 +1,14 @@
 import React from "react";
+import { useRef } from "react";
 
-function navbar(props) {
+const Navbar = (props) => {
+  // const ServicesRef = useRef(null);
+  const gotoServices = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <nav
@@ -34,41 +42,50 @@ function navbar(props) {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="/#">
+                <a
+                  className="nav-link text-light"
+                  onClick={() => {
+                    gotoServices(props.about);
+                  }}
+                  href="/about"
+                >
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="/#">
+                <a
+                  className="nav-link text-light"
+                  onClick={() => {
+                    gotoServices(props.skills);
+                  }}
+                  href="/skills"
+                >
                   Skills
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="/#">
+                <a
+                  className="nav-link text-light"
+                  onClick={() => {
+                    gotoServices(props.project);
+                  }}
+                  href="/project"
+                >
                   Project Page
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="/#">
+                <a
+                  className="nav-link text-light"
+                  onClick={() => {
+                    gotoServices(props.codeforces);
+                  }}
+                  href="/codeforces"
+                >
                   Codeforces
                 </a>
               </li>
             </ul>
-            {/* <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                className="btn btn-outline-success text-light"
-                type="submit"
-              >
-                Search
-              </button>
-            </form> */}
-
             <div
               className={`form-check form-switch text-${
                 props.mode === "light" ? "dark" : "light"
@@ -93,6 +110,5 @@ function navbar(props) {
       </nav>
     </>
   );
-}
-
-export default navbar;
+};
+export default Navbar;

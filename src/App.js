@@ -8,7 +8,8 @@ import Experience from "./components/Experience/experience";
 import { motion } from "framer-motion";
 import Footer from "./components/Footer/footer";
 import Codeforces from "./components/Codeforces/Codeforces";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useRef } from "react";
 
 // Animation Stuffs
 const NavbarVariant = {
@@ -45,24 +46,37 @@ const HomeVariant = {
 };
 
 function App() {
+  const about = useRef(null);
+  const skills = useRef(null);
+  const project = useRef(null);
+  const codeforces = useRef(null);
   return (
     <>
-      <Router>
-        <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
-          <Navbar />
-        </motion.div>
-
-        <motion.div variants={HomeVariant} initial="hidden" animate="visible">
-          <Home />
-        </motion.div>
+      <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
+        <Navbar
+          about={about}
+          skill={skills}
+          project={project}
+          codeforces={codeforces}
+        />
+      </motion.div>
+      <motion.div variants={HomeVariant} initial="hidden" animate="visible">
+        <Home />
+      </motion.div>
+      <div ref={about}>
         <About />
+      </div>
+      <div ref={skills}>
         <Experience />
+      </div>
+      <div ref={project}>
         <Project />
+      </div>
+      <div ref={codeforces}>
         <Codeforces />
-        <Footer />
-      </Router>
+      </div>
+      <Footer />
     </>
   );
 }
-
 export default App;

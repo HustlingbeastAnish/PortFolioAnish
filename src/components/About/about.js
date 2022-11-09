@@ -8,7 +8,7 @@ import Present from "./aboutimages/imgs/bitlogo1.png";
 function about() {
   return (
     <>
-      <div className="about">
+      <div className="about" id="About">
         <div className="content_about">
           <h2>About Me!</h2>
           <hr />
@@ -104,8 +104,8 @@ function about() {
                       marginBottom: "335px",
                     }}
                   >
-                    Completed Class 10 From DBMS Kadma High School with 90.2% in
-                    the year 2019
+                    Completed Class 12 From DBMS Kadma High School with 93.0% in
+                    the year 2021
                   </p>
                 </div>
               </div>
@@ -125,8 +125,8 @@ function about() {
                       marginBottom: "335px",
                     }}
                   >
-                    Completed Class 10 From DBMS Kadma High School with 90.2% in
-                    the year 2019
+                    Currently a 2nd Year Computer Science Undergrad at Birla
+                    Institute of Technology
                   </p>
                 </div>
               </div>
