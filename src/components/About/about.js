@@ -5,7 +5,7 @@ import Class10 from "./aboutimages/imgs/aboutresult1.jpg";
 import Class12 from "./aboutimages/imgs/aboutresult2.jpg";
 import Jee from "./aboutimages/imgs/aboutresult3.jpg";
 import Present from "./aboutimages/imgs/bitlogo1.png";
-function about() {
+function about(props) {
   return (
     <>
       <div className="about" id="About">
@@ -13,7 +13,12 @@ function about() {
           <h2>About Me!</h2>
           <hr />
         </div>
-        <div className="container d-flex align-items-center">
+        <div
+          className="container d-flex align-items-center"
+          // style={{
+          //   backgroundImage:`${props.mode==="dark" }`
+          // }}
+        >
           <img src={Anishlogo} alt="..." srcSet="" className="anishlogo" />
           <div className="containera">
             <p>

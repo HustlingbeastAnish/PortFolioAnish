@@ -12,10 +12,11 @@ const Navbar = (props) => {
   return (
     <>
       <nav
-        className="navbar fixed-top navbar-expand-lg bg-dark text-light mt-2"
+        className={`navbar fixed-top navbar-expand-lg bg-${props.mode} text-light mt-2`}
         id="navv"
         style={{
           cursor: "pointer",
+          color: `${props.mode === "light" ? "black" : "white"}`,
         }}
       >
         <div className="container-fluid" id="nav">
@@ -42,6 +43,7 @@ const Navbar = (props) => {
                 }}
                 style={{
                   padding: "5px 8px",
+                  color: `${props.mode === "light" ? "black" : "white"}`,
                 }}
               >
                 Home
@@ -53,6 +55,7 @@ const Navbar = (props) => {
                 }}
                 style={{
                   padding: "5px 8px",
+                  color: `${props.mode === "light" ? "black" : "white"}`,
                 }}
               >
                 About
@@ -64,6 +67,7 @@ const Navbar = (props) => {
                 }}
                 style={{
                   padding: "5px 8px",
+                  color: `${props.mode === "light" ? "black" : "white"}`,
                 }}
               >
                 Skills
@@ -75,6 +79,7 @@ const Navbar = (props) => {
                 }}
                 style={{
                   padding: "5px 8px",
+                  color: `${props.mode === "light" ? "black" : "white"}`,
                 }}
               >
                 Project Page
@@ -83,6 +88,7 @@ const Navbar = (props) => {
                 className="nav-item"
                 style={{
                   padding: "5px 8px",
+                  color: `${props.mode === "light" ? "black" : "white"}`,
                 }}
                 onClick={() => {
                   gotoServices(props.codeforces);
@@ -104,13 +110,16 @@ const Navbar = (props) => {
                 id="flexSwitchCheckChecked"
               />
               <label
-                className="form-check-label text-light"
+                className={`form-check-label text-${
+                  props.mode === "light" ? "dark" : "light"
+                }`}
                 htmlFor="flexSwitchCheckChecked"
                 style={{
                   cursor: "pointer",
+                  color: `${props.mode === "light" ? "black" : "white"}`,
                 }}
               >
-                Enable dark mode
+                Enable {props.mode === "light" ? "dark" : "light"} mode
               </label>
             </div>
           </div>
