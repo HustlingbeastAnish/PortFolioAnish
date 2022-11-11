@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import Footer from "./components/Footer/footer";
 import Codeforces from "./components/Codeforces/Codeforces";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 // Animation Stuffs
 const NavbarVariant = {
@@ -18,7 +18,7 @@ const NavbarVariant = {
     opacity: 0,
   },
   visible: {
-    y: "-3.5vh",
+    y: "-1.5vh",
     opacity: 1,
     transition: {
       delay: 1.2,
@@ -33,7 +33,7 @@ const HomeVariant = {
   hidden: { x: "-100vw", y: "100vh" },
   visible: {
     x: "0vw",
-    y: "4.6vh",
+    y: "7vh",
     transition: {
       delay: 0.7,
       duration: 1.5,
@@ -46,6 +46,35 @@ const HomeVariant = {
 };
 
 function App() {
+  const [mode, setmode] = useState("light");
+
+  const [alert, setalert] = useState(null);
+
+  const ShowAlert = (message, type) => {
+    setalert({
+      msg: message,
+      type: type,
+    });
+
+    setTimeout(() => {
+      setalert(null);
+    }, 1500);
+  };
+  // Creating the function for dark Mode
+  const ToggleMode = () => {
+    if (mode === "light") {
+      setmode("dark");
+      document.body.style.backgroundImage = "black";
+      document.body.style.color = "white";
+      ShowAlert("Dark Mode has been Enabled", "success");
+    } else {
+      setmode("light");
+      document.body.style.backgroundImage = "white";
+      document.body.style.color = "black";
+      ShowAlert("Dark Mode has been Disabled", "success");
+    }
+  };
+  const home = useRef(null);
   const about = useRef(null);
   const skills = useRef(null);
   const project = useRef(null);
@@ -55,27 +84,29 @@ function App() {
       <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
         <Navbar
           about={about}
-          skill={skills}
+          skills={skills}
           project={project}
           codeforces={codeforces}
+          mode={mode}
+          ToggleMode={ToggleMode}
         />
       </motion.div>
       <motion.div variants={HomeVariant} initial="hidden" animate="visible">
-        <Home />
+        <Home mode={mode} />
       </motion.div>
       <div ref={about}>
-        <About />
+        <About mode={mode} />
       </div>
       <div ref={skills}>
-        <Experience />
+        <Experience mode={mode} />
       </div>
       <div ref={project}>
-        <Project />
+        <Project mode={mode} />
       </div>
       <div ref={codeforces}>
-        <Codeforces />
+        <Codeforces mode={mode} />
       </div>
-      <Footer />
+      <Footer mode={mode} />
     </>
   );
 }

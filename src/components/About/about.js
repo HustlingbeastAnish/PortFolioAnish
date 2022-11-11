@@ -36,15 +36,15 @@ function about() {
         >
           <div
             id="carouselExampleDark"
-            class="carousel carousel-dark slide"
+            className="carousel carousel-dark slide"
             data-bs-ride="carousel"
           >
-            <div class="carousel-indicators">
+            <div className="carousel-indicators">
               <button
                 type="button"
                 data-bs-target="#carouselExampleDark"
                 data-bs-slide-to="0"
-                class="active"
+                className="active"
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>
@@ -62,12 +62,12 @@ function about() {
               ></button>
             </div>
             <div
-              class="carousel-inner"
+              className="carousel-inner"
               style={{
                 height: "350px",
               }}
             >
-              <div class="carousel-item active" data-bs-interval="10000">
+              <div className="carousel-item active" data-bs-interval="10000">
                 <div className="card h-100">
                   <img
                     className="card-img-top"
@@ -75,7 +75,7 @@ function about() {
                     alt=""
                   />
                 </div>
-                <div class="carousel-caption d-none d-md-block">
+                <div className="carousel-caption d-none d-md-block">
                   <p
                     className=""
                     style={{
@@ -88,7 +88,7 @@ function about() {
                   </p>
                 </div>
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div className="carousel-item" data-bs-interval="2000">
                 <div className="card h-100">
                   <img
                     className="card-img-top"
@@ -96,7 +96,7 @@ function about() {
                     alt=""
                   />
                 </div>
-                <div class="carousel-caption d-none d-md-block">
+                <div className="carousel-caption d-none d-md-block">
                   <p
                     className=""
                     style={{
@@ -109,7 +109,7 @@ function about() {
                   </p>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div className="carousel-item">
                 <div className="card h-100">
                   <img
                     className="card-img-top"
@@ -117,7 +117,7 @@ function about() {
                     alt=""
                   />
                 </div>
-                <div class="carousel-caption d-none d-md-block">
+                <div className="carousel-caption d-none d-md-block">
                   <p
                     className=""
                     style={{
@@ -132,28 +132,28 @@ function about() {
               </div>
             </div>
             <button
-              class="carousel-control-prev"
+              className="carousel-control-prev"
               type="button"
               data-bs-target="#carouselExampleDark"
               data-bs-slide="prev"
             >
               <span
-                class="carousel-control-prev-icon"
+                className="carousel-control-prev-icon"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Previous</span>
+              <span className="visually-hidden">Previous</span>
             </button>
             <button
-              class="carousel-control-next"
+              className="carousel-control-next"
               type="button"
               data-bs-target="#carouselExampleDark"
               data-bs-slide="next"
             >
               <span
-                class="carousel-control-next-icon"
+                className="carousel-control-next-icon"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Next</span>
+              <span className="visually-hidden">Next</span>
             </button>
           </div>
         </div>

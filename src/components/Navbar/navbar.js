@@ -12,8 +12,11 @@ const Navbar = (props) => {
   return (
     <>
       <nav
-        className="navbar fixed-top navbar-expand-lg bg-dark text-light"
+        className="navbar fixed-top navbar-expand-lg bg-dark text-light mt-2"
         id="navv"
+        style={{
+          cursor: "pointer",
+        }}
       >
         <div className="container-fluid" id="nav">
           <a className="navbar-brand text-light" href="/#">
@@ -32,58 +35,60 @@ const Navbar = (props) => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a
-                  className="nav-link active text-light"
-                  aria-current="page"
-                  href="/"
-                >
-                  Home
-                </a>
+              <li
+                className="nav-item"
+                onClick={() => {
+                  gotoServices(props.home);
+                }}
+                style={{
+                  padding: "5px 8px",
+                }}
+              >
+                Home
               </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link text-light"
-                  onClick={() => {
-                    gotoServices(props.about);
-                  }}
-                  href="/about"
-                >
-                  About
-                </a>
+              <li
+                className="nav-item"
+                onClick={() => {
+                  gotoServices(props.about);
+                }}
+                style={{
+                  padding: "5px 8px",
+                }}
+              >
+                About
               </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link text-light"
-                  onClick={() => {
-                    gotoServices(props.skills);
-                  }}
-                  href="/skills"
-                >
-                  Skills
-                </a>
+              <li
+                className="nav-item"
+                onClick={() => {
+                  gotoServices(props.skills);
+                }}
+                style={{
+                  padding: "5px 8px",
+                }}
+              >
+                Skills
               </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link text-light"
-                  onClick={() => {
-                    gotoServices(props.project);
-                  }}
-                  href="/project"
-                >
-                  Project Page
-                </a>
+              <li
+                className="nav-item"
+                onClick={() => {
+                  gotoServices(props.project);
+                }}
+                style={{
+                  padding: "5px 8px",
+                }}
+              >
+                Project Page
               </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link text-light"
-                  onClick={() => {
-                    gotoServices(props.codeforces);
-                  }}
-                  href="/codeforces"
-                >
-                  Codeforces
-                </a>
+              <li
+                className="nav-item"
+                style={{
+                  padding: "5px 8px",
+                }}
+                onClick={() => {
+                  gotoServices(props.codeforces);
+                }}
+              >
+                Codeforces
               </li>
             </ul>
             <div
@@ -101,6 +106,9 @@ const Navbar = (props) => {
               <label
                 className="form-check-label text-light"
                 htmlFor="flexSwitchCheckChecked"
+                style={{
+                  cursor: "pointer",
+                }}
               >
                 Enable dark mode
               </label>

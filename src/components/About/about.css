@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Oswald", sans-serif;
 }
 .about {
   background-image: url("./aboutimages/imgs/aboutimg4.jpg");
@@ -26,10 +27,10 @@
   height: 152px;
   width: 166px;
   border-radius: 330px;
-  transition: all 1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .anishlogo:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 .carousel {
   width: 640px;

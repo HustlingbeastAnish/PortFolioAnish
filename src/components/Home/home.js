@@ -13,24 +13,24 @@ function Home() {
   return (
     <div className="container1">
       <AnimatePresence>
-        {heading && (
+        {
           <motion.h1
             initial={{ color: "black", opacity: 0 }}
             animate={{ color: "white", scale: "1.3", y: -210, opacity: 1 }}
             transition={{
               delay: 2,
-              duration: 1.5,
+              duration: 3.5,
               type: "spring",
               stiffness: 80,
             }}
             exit={{
-              //  y: -190
-              opacity: 0,
+              y: [-50, 190, -50, 190, -50, 190],
+              opacity: 1,
             }}
           >
             Hello Everyone I am Anish Kumar Singh
           </motion.h1>
-        )}
+        }
       </AnimatePresence>
       <h2>I'm a </h2>
       <div className="typer">
