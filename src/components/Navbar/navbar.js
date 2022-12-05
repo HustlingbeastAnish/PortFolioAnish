@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef } from "react";
-
+import "./navbar.css";
 const Navbar = (props) => {
   // const ServicesRef = useRef(null);
   const gotoServices = (elementRef) => {
@@ -13,7 +13,6 @@ const Navbar = (props) => {
     <>
       <nav
         className={`navbar fixed-top navbar-expand-lg bg-${props.mode} text-light mt-2`}
-        id="navv"
         style={{
           cursor: "pointer",
           color: `${props.mode === "light" ? "black" : "white"}`,
@@ -37,6 +36,7 @@ const Navbar = (props) => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li
+                // id="navv"
                 className="nav-item"
                 onClick={() => {
                   gotoServices(props.home);
@@ -49,6 +49,7 @@ const Navbar = (props) => {
                 Home
               </li>
               <li
+                // id="navv"
                 className="nav-item"
                 onClick={() => {
                   gotoServices(props.about);

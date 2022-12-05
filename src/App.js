@@ -10,7 +10,7 @@ import Footer from "./components/Footer/footer";
 import Codeforces from "./components/Codeforces/Codeforces";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useRef, useState } from "react";
-import Gototop from "./components/GotoTop/gototop";
+// import Gototop from "./components/GotoTop/gototop";
 
 // Animation Stuffs
 const NavbarVariant = {
@@ -61,17 +61,16 @@ function App() {
       setalert(null);
     }, 1500);
   };
-  // Creating the function for dark Mode
   const ToggleMode = () => {
     if (mode === "light") {
       setmode("dark");
       // document.body.style.backgroundImage = "black";
-      document.body.style.color = "white";
+      // document.body.style.color = "white";
       ShowAlert("Dark Mode has been Enabled", "success");
     } else {
       setmode("light");
       // document.body.style.backgroundImage = "white";
-      document.body.style.color = "black";
+      // document.body.style.color = "black";
       ShowAlert("Dark Mode has been Disabled", "success");
     }
   };
@@ -89,7 +88,7 @@ function App() {
           project={project}
           codeforces={codeforces}
           mode={mode}
-          ToggleMode={ToggleMode}
+          // ToggleMode={ToggleMode}
         />
       </motion.div>
       <motion.div variants={HomeVariant} initial="hidden" animate="visible">
@@ -107,7 +106,6 @@ function App() {
       <div ref={codeforces}>
         <Codeforces mode={mode} />
       </div>
-      <Gototop />
       <Footer mode={mode} />
     </>
   );

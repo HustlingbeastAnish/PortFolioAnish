@@ -1,6 +1,12 @@
 import React from "react";
 
 function footer() {
+  const gototop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <footer className="bg-dark text-center text-white">
@@ -60,6 +66,20 @@ function footer() {
               role="button"
             >
               <i className="fab fa-github"></i>
+            </a>
+            <a
+              className="btn btn-outline-light btn-floating"
+              href="#!"
+              role="button"
+              style={{
+                float: "right",
+                height: "70px",
+                top: "-10px",
+              }}
+              onClick={gototop}
+            >
+              <i class="fa-solid fa-arrow-up"></i>
+              <p>Go To Top</p>
             </a>
           </section>
           {/* <!-- Section: Social media --> */}

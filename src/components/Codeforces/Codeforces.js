@@ -3,9 +3,13 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Codeforces.css";
 
-function Codeforces() {
+function Codeforces(props) {
   const [handle, sethandle] = useState("Hustlingbeast_Anish");
   const [users, setusers] = useState([{}]);
+
+  useEffect(() => {
+    fetchdetails();
+  }, []);
 
   const fetchdetails = () => {
     axios
@@ -54,7 +58,7 @@ function Codeforces() {
               <img
                 src={users.titlePhoto}
                 className="card-img-top"
-                alt="..."
+                alt="Enter username to get the Image"
                 id="userimage"
               />
               <div className="card-body mb-3 border border-dark">

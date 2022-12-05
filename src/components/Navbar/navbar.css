@@ -1,8 +1,4 @@
-#navv {
-  background-color: #39454a;
-  border-radius: 20px;
-}
-#nav {
-  background-color: #49aad3;
-  /* border-radius: 20px; */
+.navbar-nav :hover {
+  transform: scale(1.2);
+  color: rgb(204, 23, 23);
 }
