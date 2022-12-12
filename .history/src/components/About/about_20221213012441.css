@@ -4,8 +4,7 @@
   font-family: "Oswald", sans-serif;
 }
 .about {
-  /* background-image: url("./aboutimages/imgs/aboutimg4.jpg"); */
-  background-color: black;
+  background-image: url("./aboutimages/imgs/aboutimg4.jpg");
   width: 100%;
   height: 100vh;
   padding-top: 10vh;

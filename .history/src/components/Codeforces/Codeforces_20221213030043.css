@@ -18,6 +18,9 @@
   opacity: 1;
   color: "black";
 }
+.topheading {
+  color: #463a3a;
+}
 .stats {
   background-color: rgb(92, 136, 136);
 }

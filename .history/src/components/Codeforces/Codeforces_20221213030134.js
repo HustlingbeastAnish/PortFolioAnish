@@ -40,9 +40,7 @@ function Codeforces(props) {
           </h2>
           <div className="container d-flex flex-row">
             <div className="form-group p-1 ">
-              <label htmlFor="exampleInputEmail1" className="text-white">
-                CodeForces UserName
-              </label>
+              <label htmlFor="exampleInputEmail1">CodeForces UserName</label>
               <input
                 type="email"
                 className="form-control"

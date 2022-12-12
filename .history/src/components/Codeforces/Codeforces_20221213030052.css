@@ -8,7 +8,7 @@
   width: 318px;
 }
 #Main {
-  background-image: url("./images/cfback1.jpg");
+  background-image: url("./images/bg2.jpg");
   /* background-color: rgb(7, 6, 6); */
   width: 100%;
   height: cover;
@@ -17,6 +17,9 @@
   background-repeat: none;
   opacity: 1;
   color: "black";
+}
+.topheading {
+  color: #463a3a;
 }
 .stats {
   background-color: rgb(92, 136, 136);
