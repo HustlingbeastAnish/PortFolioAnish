@@ -49,7 +49,7 @@ function Codeforces(props) {
                   sethandle(e.target.value);
                 }}
               />
-              <small id="emailHelp" className="form-text text-muted ">
+              <small id="emailHelp" className="form-text text-muted text-white">
                 We'll never share your details
               </small>
             </div>

@@ -15,7 +15,7 @@ function Codeforces(props) {
   }, []);
 
   // To display the toast Container
-  const notify = () => toast("Please Enter a valid User Handle");
+  const notify = () => toast("Wow so easy!");
 
   const fetchdetails = () => {
     axios
@@ -26,9 +26,7 @@ function Codeforces(props) {
       })
       .catch((e) => {
         console.log(e);
-        if (e) {
-          notify();
-        }
+        if 
       });
   };
   return (
@@ -49,7 +47,7 @@ function Codeforces(props) {
                   sethandle(e.target.value);
                 }}
               />
-              <small id="emailHelp" className="form-text text-muted ">
+              <small id="emailHelp" className="form-text text-muted">
                 We'll never share your details
               </small>
             </div>
@@ -86,7 +84,7 @@ function Codeforces(props) {
         </div>
       </div>
       <ToastContainer
-        position="top-center"
+        position="top-right"
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}

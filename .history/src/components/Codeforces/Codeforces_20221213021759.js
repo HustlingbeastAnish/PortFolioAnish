@@ -14,9 +14,6 @@ function Codeforces(props) {
     fetchdetails();
   }, []);
 
-  // To display the toast Container
-  const notify = () => toast("Please Enter a valid User Handle");
-
   const fetchdetails = () => {
     axios
       .get(`https://codeforces.com/api/user.info?handles=${handle}`)
@@ -26,9 +23,6 @@ function Codeforces(props) {
       })
       .catch((e) => {
         console.log(e);
-        if (e) {
-          notify();
-        }
       });
   };
   return (
@@ -49,7 +43,7 @@ function Codeforces(props) {
                   sethandle(e.target.value);
                 }}
               />
-              <small id="emailHelp" className="form-text text-muted ">
+              <small id="emailHelp" className="form-text text-muted">
                 We'll never share your details
               </small>
             </div>
@@ -85,18 +79,6 @@ function Codeforces(props) {
           </div>
         </div>
       </div>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-      />
     </>
   );
 }

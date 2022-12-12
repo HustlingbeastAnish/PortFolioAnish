@@ -3,9 +3,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Codeforces.css";
 
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-
 function Codeforces(props) {
   const [handle, sethandle] = useState("Hustlingbeast_Anish");
   const [users, setusers] = useState([{}]);
@@ -13,9 +10,6 @@ function Codeforces(props) {
   useEffect(() => {
     fetchdetails();
   }, []);
-
-  // To display the toast Container
-  const notify = () => toast("Please Enter a valid User Handle");
 
   const fetchdetails = () => {
     axios
@@ -26,9 +20,6 @@ function Codeforces(props) {
       })
       .catch((e) => {
         console.log(e);
-        if (e) {
-          notify();
-        }
       });
   };
   return (
@@ -49,7 +40,7 @@ function Codeforces(props) {
                   sethandle(e.target.value);
                 }}
               />
-              <small id="emailHelp" className="form-text text-muted ">
+              <small id="emailHelp" className="form-text text-muted">
                 We'll never share your details
               </small>
             </div>
@@ -67,7 +58,7 @@ function Codeforces(props) {
               <img
                 src={users.titlePhoto}
                 className="card-img-top"
-                alt=""
+                alt="Enter username to get the Image"
                 id="userimage"
               />
               <div className="card-body mb-3 border border-dark">
@@ -85,18 +76,6 @@ function Codeforces(props) {
           </div>
         </div>
       </div>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-      />
     </>
   );
 }
