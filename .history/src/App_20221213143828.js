@@ -66,9 +66,13 @@ function App() {
   const ToggleMode = () => {
     if (mode === "light") {
       setmode("dark");
+      // document.body.style.backgroundImage = "black";
+      // document.body.style.color = "white";
       ShowAlert("Dark Mode has been Enabled", "success");
     } else {
       setmode("light");
+      // document.body.style.backgroundImage = "white";
+      // document.body.style.color = "black";
       ShowAlert("Dark Mode has been Disabled", "success");
     }
   };

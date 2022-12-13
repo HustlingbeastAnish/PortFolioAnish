@@ -23,7 +23,7 @@ function Home(props) {
           <motion.h1
             initial={{ color: "black", opacity: 0 }}
             animate={{
-              color: "white",
+              color: props.mode === "light" ? "black" : "white",
               scale: "1.3",
               y: -210,
               opacity: 1,

@@ -11,7 +11,7 @@ function project(props) {
         className="containerProj"
         style={{
           backgroundColor:
-            props.mode === "light" ? "rgb(163, 158, 161)" : "black",
+            props.mode === "light" ? "rgb(165, 160, 153)" : "black",
         }}
       >
         <h1 style={{ color: "white" }}>Projects!</h1>

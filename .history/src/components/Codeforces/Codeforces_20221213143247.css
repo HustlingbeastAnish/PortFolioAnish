@@ -8,7 +8,7 @@
   width: 318px;
 }
 #Main {
-  background-color: black;
+  background-color: rgb(3, 3, 3);
   width: 100%;
   height: cover;
   padding-top: 10vh;
@@ -16,4 +16,7 @@
   background-repeat: none;
   opacity: 0.9;
   color: "black";
+}
+.stats {
+  background-color: rgb(92, 136, 136);
 }

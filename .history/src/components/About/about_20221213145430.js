@@ -14,7 +14,7 @@ function about(props) {
         id="About"
         style={{
           backgroundColor:
-            props.mode === "light" ? "rgb(170, 153, 153)" : "black",
+            props.mode === "light" ? "rgb(190, 153, 153)" : "black",
         }}
       >
         <div className="content_about">

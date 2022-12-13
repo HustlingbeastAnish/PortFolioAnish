@@ -51,27 +51,7 @@ function App() {
   const [mode, setmode] = useState("dark");
 
   const { scrollYProgress } = useScroll();
-  const [alert, setalert] = useState(null);
 
-  const ShowAlert = (message, type) => {
-    setalert({
-      msg: message,
-      type: type,
-    });
-
-    setTimeout(() => {
-      setalert(null);
-    }, 1500);
-  };
-  const ToggleMode = () => {
-    if (mode === "light") {
-      setmode("dark");
-      ShowAlert("Dark Mode has been Enabled", "success");
-    } else {
-      setmode("light");
-      ShowAlert("Dark Mode has been Disabled", "success");
-    }
-  };
   const home = useRef(null);
   const about = useRef(null);
   const skills = useRef(null);
@@ -87,7 +67,7 @@ function App() {
           project={project}
           codeforces={codeforces}
           mode={mode}
-          ToggleMode={ToggleMode}
+          // ToggleMode={ToggleMode}
         />
       </motion.div>
       <motion.div variants={HomeVariant} initial="hidden" animate="visible">

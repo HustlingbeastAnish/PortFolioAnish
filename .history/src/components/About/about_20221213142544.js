@@ -9,14 +9,7 @@ import { motion } from "framer-motion";
 function about(props) {
   return (
     <>
-      <div
-        className="about"
-        id="About"
-        style={{
-          backgroundColor:
-            props.mode === "light" ? "rgb(170, 153, 153)" : "black",
-        }}
-      >
+      <div className="about" id="About">
         <div className="content_about">
           <h2>About Me!</h2>
           <hr />

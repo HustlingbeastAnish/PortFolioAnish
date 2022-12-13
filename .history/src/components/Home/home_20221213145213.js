@@ -15,7 +15,7 @@ function Home(props) {
       className="container1"
       style={{
         backgroundColor:
-          props.mode === "light" ? "rgb(158, 153, 153)" : "black",
+          props.mode === "light" ? "rgb(158, 153, 153)white" : "black",
       }}
     >
       <AnimatePresence>
@@ -23,7 +23,7 @@ function Home(props) {
           <motion.h1
             initial={{ color: "black", opacity: 0 }}
             animate={{
-              color: "white",
+              color: props.mode === "light" ? "black" : "white",
               scale: "1.3",
               y: -210,
               opacity: 1,

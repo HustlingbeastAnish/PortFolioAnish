@@ -33,13 +33,7 @@ function Codeforces(props) {
   };
   return (
     <>
-      <div
-        id="Main"
-        style={{
-          backgroundColor:
-            props.mode === "light" ? "rgb(170, 153, 153)" : "black",
-        }}
-      >
+      <div id="Main">
         <div className="container d-flex  flex-column align-items-center border border-dark">
           <h2 className="topheading text-white">
             Get Your Codeforces Details Here

@@ -4,16 +4,10 @@ import Pr1 from "./Projectimages/Project1.jfif";
 import Pr2 from "./Projectimages/Project2.jfif";
 import Pr3 from "./Projectimages/pj3.png";
 import Pr4 from "./Projectimages/pj4.jpg";
-function project(props) {
+function project() {
   return (
     <>
-      <div
-        className="containerProj"
-        style={{
-          backgroundColor:
-            props.mode === "light" ? "rgb(163, 158, 161)" : "black",
-        }}
-      >
+      <div className="containerProj">
         <h1 style={{ color: "white" }}>Projects!</h1>
         <div className="container d-flex">
           <div className="containerp">

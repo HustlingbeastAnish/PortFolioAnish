@@ -1,4 +1,6 @@
 .containerProj {
+  background-image: url("./Projectimages/projback1.jpg");
+  background-color: black;
   background-size: cover;
   width: 100%;
   height: 100vh;

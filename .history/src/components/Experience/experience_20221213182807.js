@@ -12,13 +12,9 @@ import s8 from "./skillsimages/imgs/skill8.webp";
 function experience(props) {
   return (
     <>
-      <div
-        className="skills1 "
-        style={{
-          backgroundColor:
-            props.mode === "light" ? "rgb(165, 160, 153)" : "black",
-        }}
-      >
+      <div className="skills1 " style={{;"black"
+        backgroundColor:props.mode==="light"?"rgb(165, 160, 153)"
+      }}>
         <div className="container d-flex flex-column align-items-center mt-4 text-dark">
           <h1
             style={{
