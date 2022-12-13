@@ -5,7 +5,6 @@ import Class10 from "./aboutimages/imgs/aboutresult1.jpg";
 import Class12 from "./aboutimages/imgs/aboutresult2.jpg";
 import Jee from "./aboutimages/imgs/aboutresult3.jpg";
 import Present from "./aboutimages/imgs/bitlogo1.png";
-import { motion } from "framer-motion";
 function about(props) {
   return (
     <>
@@ -15,13 +14,9 @@ function about(props) {
           <hr />
         </div>
         <div className="container d-flex align-items-center">
-          <motion.div
-            drag
-            dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
-            dragElastic={0.5}
-          >
+          <div>
             <img src={Anishlogo} alt="..." srcSet="" className="anishlogo" />
-          </motion.div>
+          </div>
           <div className="containera">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore

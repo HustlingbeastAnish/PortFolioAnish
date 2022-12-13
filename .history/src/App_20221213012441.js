@@ -6,7 +6,6 @@ import Home from "./components/Home/home";
 import Project from "./components/Project/project";
 import Experience from "./components/Experience/experience";
 import { motion } from "framer-motion";
-import { useScroll } from "framer-motion";
 import Footer from "./components/Footer/footer";
 import Codeforces from "./components/Codeforces/Codeforces";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -50,7 +49,6 @@ const HomeVariant = {
 function App() {
   const [mode, setmode] = useState("dark");
 
-  const { scrollYProgress } = useScroll();
   const [alert, setalert] = useState(null);
 
   const ShowAlert = (message, type) => {
@@ -83,7 +81,6 @@ function App() {
   const codeforces = useRef(null);
   return (
     <>
-      <motion.div style={{ scaleX: scrollYProgress }} />
       <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
         <Navbar
           about={about}

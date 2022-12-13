@@ -94,6 +94,7 @@ function App() {
           // ToggleMode={ToggleMode}
         />
       </motion.div>
+      {/* </motion.div> */}
       <motion.div variants={HomeVariant} initial="hidden" animate="visible">
         <Home mode={mode} />
       </motion.div>

@@ -84,7 +84,7 @@ function App() {
   return (
     <>
       <motion.div style={{ scaleX: scrollYProgress }} />
-      <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
+      {/* <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
         <Navbar
           about={about}
           skills={skills}
@@ -94,6 +94,7 @@ function App() {
           // ToggleMode={ToggleMode}
         />
       </motion.div>
+
       <motion.div variants={HomeVariant} initial="hidden" animate="visible">
         <Home mode={mode} />
       </motion.div>
@@ -109,7 +110,7 @@ function App() {
       <div ref={codeforces}>
         <Codeforces mode={mode} />
       </div>
-      <Footer mode={mode} />
+      <Footer mode={mode} /> */}
     </>
   );
 }

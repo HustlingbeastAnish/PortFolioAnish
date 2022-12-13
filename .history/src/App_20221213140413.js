@@ -83,7 +83,7 @@ function App() {
   const codeforces = useRef(null);
   return (
     <>
-      <motion.div style={{ scaleX: scrollYProgress }} />
+      {/* <motion.div style={{ scaleX: scrollYProgress }} /> */}
       <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
         <Navbar
           about={about}

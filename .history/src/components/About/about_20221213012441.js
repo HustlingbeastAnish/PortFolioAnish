@@ -5,7 +5,6 @@ import Class10 from "./aboutimages/imgs/aboutresult1.jpg";
 import Class12 from "./aboutimages/imgs/aboutresult2.jpg";
 import Jee from "./aboutimages/imgs/aboutresult3.jpg";
 import Present from "./aboutimages/imgs/bitlogo1.png";
-import { motion } from "framer-motion";
 function about(props) {
   return (
     <>
@@ -14,14 +13,13 @@ function about(props) {
           <h2>About Me!</h2>
           <hr />
         </div>
-        <div className="container d-flex align-items-center">
-          <motion.div
-            drag
-            dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
-            dragElastic={0.5}
-          >
-            <img src={Anishlogo} alt="..." srcSet="" className="anishlogo" />
-          </motion.div>
+        <div
+          className="container d-flex align-items-center"
+          // style={{
+          //   backgroundImage:`${props.mode==="dark" }`
+          // }}
+        >
+          <img src={Anishlogo} alt="..." srcSet="" className="anishlogo" />
           <div className="containera">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
@@ -33,12 +31,6 @@ function about(props) {
             </p>
           </div>
         </div>
-        <a
-          href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-          download
-        >
-          Click to download Resume
-        </a>
         <div
           className="container mt-2 "
           style={{

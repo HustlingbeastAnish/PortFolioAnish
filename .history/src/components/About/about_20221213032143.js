@@ -15,11 +15,7 @@ function about(props) {
           <hr />
         </div>
         <div className="container d-flex align-items-center">
-          <motion.div
-            drag
-            dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
-            dragElastic={0.5}
-          >
+          <motion.div>
             <img src={Anishlogo} alt="..." srcSet="" className="anishlogo" />
           </motion.div>
           <div className="containera">

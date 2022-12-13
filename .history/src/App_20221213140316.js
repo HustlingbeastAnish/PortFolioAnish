@@ -50,7 +50,6 @@ const HomeVariant = {
 function App() {
   const [mode, setmode] = useState("dark");
 
-  const { scrollYProgress } = useScroll();
   const [alert, setalert] = useState(null);
 
   const ShowAlert = (message, type) => {
@@ -83,7 +82,6 @@ function App() {
   const codeforces = useRef(null);
   return (
     <>
-      <motion.div style={{ scaleX: scrollYProgress }} />
       <motion.div variants={NavbarVariant} initial="hidden" animate="visible">
         <Navbar
           about={about}
