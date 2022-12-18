@@ -2,4 +2,5 @@ Hey Welcome
 
 Take a look at my basic portfolio website 
 [anish2003.netlify.app](https://anish2003.netlify.app/)
-https://anishnew2003.netlify.app/p
+Updated:
+(https://anishnew2003.netlify.app)
