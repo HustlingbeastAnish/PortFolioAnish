@@ -138,7 +138,7 @@ const Navbar = (props) => {
                 Codeforces
               </li>
             </ul>
-            <div className="form-check form-switch p-2">
+            <div className="form-check form-switch">
               <input
                 className="form-check-input"
                 type="checkbox"
@@ -147,7 +147,7 @@ const Navbar = (props) => {
                 id="flexSwitchCheckChecked"
               />
               <label
-                className="form-check-label px-2"
+                className="form-check-label"
                 htmlFor="flexSwitchCheckChecked"
                 style={{
                   cursor: "pointer",

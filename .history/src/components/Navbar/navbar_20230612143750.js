@@ -147,7 +147,7 @@ const Navbar = (props) => {
                 id="flexSwitchCheckChecked"
               />
               <label
-                className="form-check-label px-2"
+                className="form-check-label"
                 htmlFor="flexSwitchCheckChecked"
                 style={{
                   cursor: "pointer",

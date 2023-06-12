@@ -1,0 +1,11 @@
+.navbar-nav :hover {
+  transform: scale(1.2);
+  color: rgb(204, 23, 23);
+}
+.nav-item :hover {
+  color: red;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  background-color: white;
+}
