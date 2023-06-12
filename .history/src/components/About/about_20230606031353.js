@@ -1,0 +1,154 @@
+import React from "react";
+import "./about.css";
+import { gsap } from "gsap";
+import Anishlogo from "./aboutimages/imgs/Aboutimg1.jpeg";
+import { motion } from "framer-motion";
+import Class10 from "./aboutimages/imgs/aboutresult1.jpg";
+import { useEffect, useRef } from "react";
+import Jee from "./aboutimages/imgs/aboutresult3.jpg";
+import Aos from "aos";
+import Card_gen from "../Card_gen";
+import "aos/dist/aos.css";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea } from "@mui/material";
+
+function About(props) {
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 0,
+    });
+  }, []);
+
+  let logoItem = useRef(null);
+
+  return (
+    <>
+      <div
+        className="about"
+        id="About"
+        style={{
+          backgroundColor:
+            props.mode === "light" ? "rgb(170, 153, 153)" : "black",
+        }}
+      >
+        <div className="content_about">
+          <h2 className="h1about">About Me!</h2>
+          <hr />
+        </div>
+        <div
+          className="container d-flex align-items-center"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+        >
+          <img
+            src={Anishlogo}
+            alt="..."
+            srcSet=""
+            className="anishlogo"
+            ref={logoItem}
+          />
+          <div className="containera">
+            <p>
+              Hey Everyone I am Anish Kumar Singh , a Second year Computer
+              Science Undergrad at Birla Institute of Technology Mesra
+            </p>
+          </div>
+        </div>
+        <div className="container d-flex">
+          <motion.div
+            className="card m-5 p-2"
+            style={{ width: "18rem" }}
+            whileHover={{ scale: 1.1 }}
+          >
+            <img className="card-img-top" src={Class10} alt="" />
+            <div className="card-body">
+              <p
+                className="card-text"
+                style={{
+                  color: "black",
+                }}
+              >
+                Completed Class 10 CBSE Board Examination with an overall
+                percentage of 90.2%
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            className="card m-5 p-2"
+            style={{ width: "18rem" }}
+            whileHover={{ scale: 1.1 }}
+          >
+            {/* <img className="card-img-top" src={Class10} alt="" />
+            <div className="card-body">
+              <i className="fa-sharp fa-solid fa-school"></i>
+              <p
+                className="card-text"
+                style={{
+                  color: "black",
+                }}
+              >
+                Class 12 CBSE Board Examination with an overall percentage of
+                93.0%
+              </p>
+            </div> */}
+            <Card sx={{ maxWidth: 345 }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image="/static/images/cards/contemplative-reptile.jpg"
+                  alt="green iguana"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Matriculation
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Lizards are a widespread group of squamate reptiles, with
+                    over 6,000 species, ranging across all continents except
+                    Antarctica
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </motion.div>
+          <motion.div
+            className="card m-5 p-2"
+            style={{ width: "18rem" }}
+            whileHover={{ scale: 1.1 }}
+          >
+            <img
+              className="card-img-top"
+              src={Jee}
+              alt=""
+              style={{
+                height: "200px",
+              }}
+            />
+            <div className="card-body">
+              <p
+                className="card-text"
+                style={{
+                  color: "black",
+                }}
+              >
+                Qualified Joint Entrance Examination Mains with an overall
+                Percentile of 98.256%ile
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default About;
