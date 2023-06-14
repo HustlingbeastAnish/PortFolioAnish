@@ -54,11 +54,7 @@ const Experience = (props) => {
             </div>
             <div className="card m-3 p-2" style={{ width: "18rem" }}>
               <motion.div className="card-img-top" whileHover={{ scale: 1.1 }}>
-                <img
-                  src={s2}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
+                <img src={s2} alt="" />
               </motion.div>
               <div className="card-body">
                 <p className="card-text">CSS</p>
@@ -66,11 +62,7 @@ const Experience = (props) => {
             </div>
             <div className="card m-3 p-2" style={{ width: "18rem" }}>
               <motion.div className="card-img-top" whileHover={{ scale: 1.1 }}>
-                <img
-                  src={s3}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
+                <img src={s3} alt="" />
               </motion.div>
               <div className="card-body">
                 <p className="card-text">Bootstrap</p>
@@ -78,11 +70,7 @@ const Experience = (props) => {
             </div>
             <div className="card m-3 p-2" style={{ width: "18rem" }}>
               <motion.div className="card-img-top" whileHover={{ scale: 1.1 }}>
-                <img
-                  src={s4}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
+                <img src={s4} alt="" />
               </motion.div>
               <div className="card-body">
                 <p className="card-text">JS</p>
@@ -93,11 +81,7 @@ const Experience = (props) => {
                 className="card-img-top h-50"
                 whileHover={{ scale: 1.1 }}
               >
-                <img
-                  src={s5}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
+                <img src={s5} alt="" />
               </motion.div>
               <div className="card-body">
                 <p className="card-text">React JS</p>
@@ -105,11 +89,7 @@ const Experience = (props) => {
             </div>
             <div className="card m-3 p-2" style={{ width: "18rem" }}>
               <motion.div className="card-img-top" whileHover={{ scale: 1.1 }}>
-                <img
-                  src={s6}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
+                <img src={s6} alt="" />
               </motion.div>
               <div className="card-body">
                 <p className="card-text">Node JS</p>
@@ -117,11 +97,7 @@ const Experience = (props) => {
             </div>
             <div className="card m-3 p-2" style={{ width: "18rem" }}>
               <motion.div className="card-img-top" whileHover={{ scale: 1.1 }}>
-                <img
-                  src={s7}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
+                <img src={s7} alt="" />
               </motion.div>
               <div className="card-body">
                 <p className="card-text">Express JS</p>
@@ -129,11 +105,7 @@ const Experience = (props) => {
             </div>
             <div className="card m-3 p-2" style={{ width: "18rem" }}>
               <motion.div className="card-img-top" whileHover={{ scale: 1.1 }}>
-                <img
-                  src={s8}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
+                <img src={s8} alt="" />
               </motion.div>
               <div className="card-body">
                 <p className="card-text">MongoDB</p>

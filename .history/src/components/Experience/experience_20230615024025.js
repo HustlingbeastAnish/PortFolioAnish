@@ -129,11 +129,7 @@ const Experience = (props) => {
             </div>
             <div className="card m-3 p-2" style={{ width: "18rem" }}>
               <motion.div className="card-img-top" whileHover={{ scale: 1.1 }}>
-                <img
-                  src={s8}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
+                <img src={s8} alt="" />
               </motion.div>
               <div className="card-body">
                 <p className="card-text">MongoDB</p>
