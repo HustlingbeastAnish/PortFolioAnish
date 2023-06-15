@@ -64,11 +64,13 @@ function Footer() {
                   href="#!"
                   role="button"
                   style={{
-                    height: "40px",
+                    height: "70px",
+                    top: "-10px",
                   }}
                   onClick={gototop}
                 >
                   <i className="fa-solid fa-arrow-up"></i>
+                  <p>Go To Top</p>
                 </a>
               </div>
             </div>

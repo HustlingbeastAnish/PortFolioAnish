@@ -51,7 +51,12 @@ function Contact(props) {
     >
       <form>
         <div class="form-group">
-          <label for="exampleFormControlInput1" className="text-white">
+          <label
+            for="exampleFormControlInput1"
+            style={{
+              backgroundColor: props.mode === "light" ? "white" : "black",
+            }}
+          >
             Name
           </label>
           <input

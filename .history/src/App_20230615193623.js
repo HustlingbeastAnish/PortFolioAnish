@@ -106,6 +106,7 @@ function App() {
       <motion.div variants={HomeVariant} initial="hidden" animate="visible">
         <Footer mode={mode} />
       </motion.div>
+      <div classNa>{}</div>
     </Router>
   );
 }

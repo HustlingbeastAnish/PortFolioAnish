@@ -101,7 +101,7 @@ const Experience = (props) => {
                 />
               </motion.div>
               <div className="card-body">
-                <p className="card-text text-white">React JS</p>
+                <p className="card-text">React JS</p>
               </div>
             </div>
             <div className="card m-3 p-2" style={{ width: "18rem" }}>

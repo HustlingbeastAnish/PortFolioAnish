@@ -103,9 +103,7 @@ function App() {
       >
         <Project mode={mode} />
       </motion.div>
-      <motion.div variants={HomeVariant} initial="hidden" animate="visible">
-        <Footer mode={mode} />
-      </motion.div>
+      {<Footer mode={mode} />}
     </Router>
   );
 }

@@ -5,7 +5,7 @@ import Pr2 from "./Projectimages/Project2.jfif";
 import Pr3 from "./Projectimages/pj3.png";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import Pr4 from "./Projectimages/pj4.jpeg";
+import Pr4 from "./Projectimages/pj4.jpg";
 import Pr6 from "./Projectimages/movieapp.jpeg";
 import Contact from "../Contact/contact";
 
@@ -22,13 +22,14 @@ function MyVerticallyCenteredModal(props) {
   return (
     <Modal
       {...props}
-      size={modalSize}
+      size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Contact Me by filling the form below
+          Hey Found My Projects Interesting? Contact Me by filling the form
+          below
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -157,9 +158,9 @@ function Project(props) {
                 style={{ height: "120px" }}
               />
               <div className="card">
-                <div className="card-header">College Companion</div>
+                <div className="card-header">CRUD Application</div>
                 <a
-                  href="https://github.com/HustlingbeastAnish/WebApp"
+                  href="https://github.com/HusltingbeastAnish/CRUD-APP-"
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-primary"
@@ -192,7 +193,7 @@ function Project(props) {
           </div>
         </div>
 
-        <div className="m-3">
+        <div>
           <Button
             variant="primary"
             onClick={() => setModalShow(true)}

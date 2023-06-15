@@ -13,7 +13,7 @@ function Footer() {
       <footer className="bg-dark text-center text-white">
         <div className="container p-4 pb-0">
           <section className="mb-4">
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-space-around">
               <div>
                 <a
                   className="btn btn-outline-light btn-floating m-1"
@@ -64,11 +64,13 @@ function Footer() {
                   href="#!"
                   role="button"
                   style={{
-                    height: "40px",
+                    height: "70px",
+                    top: "-10px",
                   }}
                   onClick={gototop}
                 >
                   <i className="fa-solid fa-arrow-up"></i>
+                  <p>Go To Top</p>
                 </a>
               </div>
             </div>

@@ -1,0 +1,40 @@
+.containerProj {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 10vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  /* Small screens (576px and up) */
+  .grid-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  /* Medium screens (768px and up) */
+  .grid-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1251px) {
+  /* Large screens (992px and up) */
+  .grid-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+/* Additional CSS styles for grid columns */
+.grid-col {
+  width: 100%;
+}

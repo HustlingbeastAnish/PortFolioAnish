@@ -58,21 +58,21 @@ function Footer() {
                   <i className="fab fa-github"></i>
                 </a>
               </div>
-              <div>
-                <a
-                  className="btn btn-outline-light btn-floating"
-                  href="#!"
-                  role="button"
-                  style={{
-                    height: "40px",
-                  }}
-                  onClick={gototop}
-                >
-                  <i className="fa-solid fa-arrow-up"></i>
-                </a>
-              </div>
             </div>
           </section>
+        </div>
+        <div>
+          <a
+            className="btn btn-outline-light btn-floating"
+            href="#!"
+            role="button"
+            style={{
+              height: "40px",
+            }}
+            onClick={gototop}
+          >
+            <i className="fa-solid fa-arrow-up"></i>
+          </a>
         </div>
         <div className="text-center p-3" style={{ backgroundColor: "black" }}>
           <a className="text-white" href="/#">

@@ -45,7 +45,7 @@ const Navbar = (props) => {
                 style={{
                   padding: "5px 8px",
                   color: `${props.mode === "light" ? "black" : "white"}`,
-                  transition: "color", // Added transition for smooth color change
+                  transition: "color 0.3s", // Added transition for smooth color change
                   cursor: "pointer",
                 }}
                 onMouseEnter={(e) => {

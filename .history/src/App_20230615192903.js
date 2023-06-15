@@ -91,9 +91,17 @@ function App() {
         variants={HomeVariant}
         initial="hidden"
         animate="visible"
-        ref={skills}
+        ref={about}
       >
-        <Experience mode={mode} />
+        <About mode={mode} />
+      </motion.div>
+      <motion.div
+        variants={HomeVariant}
+        initial="hidden"
+        animate="visible"
+        ref={about}
+      >
+        <About mode={mode} />
       </motion.div>
       <motion.div
         variants={HomeVariant}
@@ -103,9 +111,10 @@ function App() {
       >
         <Project mode={mode} />
       </motion.div>
-      <motion.div variants={HomeVariant} initial="hidden" animate="visible">
-        <Footer mode={mode} />
-      </motion.div>
+      <div ref={skills}>
+        <Experience mode={mode} />
+      </div>
+      {<Footer mode={mode} />}
     </Router>
   );
 }

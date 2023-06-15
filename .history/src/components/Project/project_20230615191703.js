@@ -28,7 +28,8 @@ function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Contact Me by filling the form below
+          Hey Found My Projects Interesting? Contact Me by filling the form
+          below
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>

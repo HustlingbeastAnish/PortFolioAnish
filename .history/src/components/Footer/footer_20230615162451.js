@@ -65,6 +65,7 @@ function Footer() {
                   role="button"
                   style={{
                     height: "40px",
+                    top: "-10px",
                   }}
                   onClick={gototop}
                 >

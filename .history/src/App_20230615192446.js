@@ -40,6 +40,8 @@ const HomeVariant = {
       duration: 1.5,
       type: "spring",
       stiffness: 70,
+      // mass: 0.4,
+      // damping: 8,
     },
   },
 };
@@ -79,33 +81,16 @@ function App() {
       <motion.div variants={HomeVariant} initial="hidden" animate="visible">
         <Home mode={mode} />
       </motion.div>
-      <motion.div
-        variants={HomeVariant}
-        initial="hidden"
-        animate="visible"
-        ref={about}
-      >
+      <div ref={about}>
         <About mode={mode} />
-      </motion.div>
-      <motion.div
-        variants={HomeVariant}
-        initial="hidden"
-        animate="visible"
-        ref={skills}
-      >
+      </div>
+      <div ref={skills}>
         <Experience mode={mode} />
-      </motion.div>
-      <motion.div
-        variants={HomeVariant}
-        initial="hidden"
-        animate="visible"
-        ref={project}
-      >
+      </div>
+      <div ref={project}>
         <Project mode={mode} />
-      </motion.div>
-      <motion.div variants={HomeVariant} initial="hidden" animate="visible">
-        <Footer mode={mode} />
-      </motion.div>
+      </div>
+      {<Footer mode={mode} />}
     </Router>
   );
 }

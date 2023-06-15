@@ -10,7 +10,10 @@ function Footer() {
 
   return (
     <>
-      <footer className="bg-dark text-center text-white">
+      <footer className="bg-dark text-center text-white"
+      style={
+        height:"auto",
+      }>
         <div className="container p-4 pb-0">
           <section className="mb-4">
             <div className="d-flex justify-content-center">

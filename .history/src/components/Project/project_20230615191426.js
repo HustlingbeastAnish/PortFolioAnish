@@ -28,7 +28,8 @@ function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Contact Me by filling the form below
+          Hey Found My Projects Interesting? Contact Me by filling the form
+          below
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -157,9 +158,9 @@ function Project(props) {
                 style={{ height: "120px" }}
               />
               <div className="card">
-                <div className="card-header">College Companion</div>
+                <div className="card-header">CRUD Application</div>
                 <a
-                  href="https://github.com/HustlingbeastAnish/WebApp"
+                  href="https://github.com/HusltingbeastAnish/CRUD-APP-"
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-primary"

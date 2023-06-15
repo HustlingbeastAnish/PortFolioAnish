@@ -11,7 +11,9 @@ function Footer() {
   return (
     <>
       <footer className="bg-dark text-center text-white">
-        <div className="container p-4 pb-0">
+        <div className="container p-4 pb-0"  style={
+        height:"auto"
+      }>
           <section className="mb-4">
             <div className="d-flex justify-content-center">
               <div>
