@@ -1,36 +1,49 @@
-.containerProj {
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.skills1 {
+  /* background-image: url("./skillsimages/imgs/skillback2.jpg"); */
+  background-color: black;
+  height: cover;
+  width: 100%;
+  z-index: -1;
+  background-repeat: none;
   background-size: cover;
   width: 100%;
   height: 100vh;
   padding-top: 10vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
-@media screen and (max-width: 800px) {
+.card {
+  transition: transform 0.1s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 576px) {
   /* Small screens (576px and up) */
   .grid-row {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 5px;
   }
 }
 
-@media screen and (min-width: 1250px) {
+@media (min-width: 768px) {
   /* Medium screens (768px and up) */
   .grid-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 5px;
   }
 }
 
-@media screen and (min-width: 1251px) {
+@media (min-width: 992px) {
   /* Large screens (992px and up) */
   .grid-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 5px;
   }
 }
 

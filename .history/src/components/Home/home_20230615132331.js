@@ -17,7 +17,7 @@ function Home(props) {
       style={{
         backgroundColor: props.mode === "light" ? "gray" : "black",
         height: "auto",
-        marginTop: "-52px",
+        marginTop: "-50px",
       }}
     >
       <AnimatePresence>
@@ -28,6 +28,7 @@ function Home(props) {
               color: "white",
               scale: "1.3",
               fontSize: "80px",
+              y: -150,
               opacity: 1,
             }}
             transition={{

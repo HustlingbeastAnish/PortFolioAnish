@@ -146,7 +146,7 @@ const Navbar = (props) => {
                   e.target.style.transform = "scale(1)";
                 }}
               >
-                Enable {props.mode === "light" ? "dark" : "light"} mode
+                {props.mode === "light" ? "dark" : "light"} mode
               </label>
             </div>
           </div>

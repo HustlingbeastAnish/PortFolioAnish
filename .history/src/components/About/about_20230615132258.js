@@ -28,6 +28,7 @@ function About(props) {
         style={{
           backgroundColor: props.mode === "light" ? "gray" : "black",
           height: "auto",
+          marginTop: "550px",
         }}
       >
         <div className="content_about">

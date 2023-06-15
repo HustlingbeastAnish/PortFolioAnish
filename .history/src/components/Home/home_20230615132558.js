@@ -17,7 +17,7 @@ function Home(props) {
       style={{
         backgroundColor: props.mode === "light" ? "gray" : "black",
         height: "auto",
-        marginTop: "-52px",
+        marginTop: "-53px",
       }}
     >
       <AnimatePresence>

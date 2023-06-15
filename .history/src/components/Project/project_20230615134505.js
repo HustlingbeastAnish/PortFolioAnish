@@ -19,7 +19,7 @@ function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Hey Found My Projects Interesting? Contact Me by filling the form
+          Hey Found My Projects Interesting ? Contact Me by filling the form
           below
         </Modal.Title>
       </Modal.Header>
@@ -35,14 +35,12 @@ function MyVerticallyCenteredModal(props) {
 
 function Project(props) {
   const [modalShow, setModalShow] = React.useState(false);
-
   return (
     <>
       <div
         className="containerProj"
         style={{
           backgroundColor: props.mode === "light" ? "gray" : "black",
-          height: "auto",
         }}
       >
         <MyVerticallyCenteredModal
@@ -53,36 +51,24 @@ function Project(props) {
           <h1 style={{ color: "white" }}>Projects!</h1>
         </div>
 
-        <div className="row grid-row">
-          <div className="col grid-col">
+        <div className="container d-flex ">
+          <div className="containerp card-grid">
             <div className="card mx-5 my-3" style={{ width: "18rem" }}>
-              <img
-                src={Pr1}
-                className="card-img-top"
-                alt="..."
-                style={{ height: "120px" }}
-              />
+              <img src={Pr1} className="card-img-top" alt="..." />
               <div className="card">
-                <div className="card-header">TextFormatter</div>
+                <div className="card-header ">TextFormatter</div>
                 <a
                   href="https://github.com/HusltingbeastAnish/TextFormatter"
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-primary"
                 >
-                  Visit on GitHub
+                  Visit on GitHuB
                 </a>
               </div>
             </div>
-          </div>
-          <div className="col grid-col">
             <div className="card mx-5 my-3" style={{ width: "18rem" }}>
-              <img
-                src={Pr2}
-                className="card-img-top"
-                alt="..."
-                style={{ height: "120px" }}
-              />
+              <img src={Pr2} className="card-img-top" alt="..." />
               <div className="card">
                 <div className="card-header">NewsWebsite</div>
                 <a
@@ -96,7 +82,7 @@ function Project(props) {
               </div>
             </div>
           </div>
-          <div className="col grid-col">
+          <div className="containerp">
             <div className="card mx-5 my-3" style={{ width: "18rem" }}>
               <img
                 src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -118,15 +104,8 @@ function Project(props) {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="col grid-col">
             <div className="card mx-5 my-3" style={{ width: "18rem" }}>
-              <img
-                src={Pr3}
-                className="card-img-top"
-                alt="..."
-                style={{ height: "120px" }}
-              />
+              <img src={Pr3} className="card-img-top" alt="..." />
               <div className="card">
                 <div className="card-header">SpotifyClone</div>
                 <a
@@ -140,13 +119,15 @@ function Project(props) {
               </div>
             </div>
           </div>
-          <div className="col grid-col">
+          <div className="containerp">
             <div className="card mx-5 my-3" style={{ width: "18rem" }}>
               <img
                 src={Pr4}
                 className="card-img-top"
                 alt="..."
-                style={{ height: "120px" }}
+                style={{
+                  height: "130px",
+                }}
               />
               <div className="card">
                 <div className="card-header">CRUD Application</div>
@@ -156,18 +137,18 @@ function Project(props) {
                   rel="noreferrer"
                   className="btn btn-primary"
                 >
-                  Visit on GitHub
+                  Visit on GitHuB
                 </a>
               </div>
             </div>
-          </div>
-          <div className="col grid-col">
             <div className="card mx-5 my-3" style={{ width: "18rem" }}>
               <img
                 src={Pr6}
                 className="card-img-top"
                 alt="..."
-                style={{ height: "120px" }}
+                style={{
+                  height: "150px",
+                }}
               />
               <div className="card">
                 <div className="card-header">MovieApplication</div>
@@ -177,13 +158,12 @@ function Project(props) {
                   rel="noreferrer"
                   className="btn btn-primary"
                 >
-                  Visit on GitHub
+                  Visit on GitHuB
                 </a>
               </div>
             </div>
           </div>
         </div>
-
         <div>
           <Button
             variant="primary"

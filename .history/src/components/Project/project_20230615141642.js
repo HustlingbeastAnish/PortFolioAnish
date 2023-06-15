@@ -42,7 +42,6 @@ function Project(props) {
         className="containerProj"
         style={{
           backgroundColor: props.mode === "light" ? "gray" : "black",
-          height: "auto",
         }}
       >
         <MyVerticallyCenteredModal
@@ -56,12 +55,7 @@ function Project(props) {
         <div className="row grid-row">
           <div className="col grid-col">
             <div className="card mx-5 my-3" style={{ width: "18rem" }}>
-              <img
-                src={Pr1}
-                className="card-img-top"
-                alt="..."
-                style={{ height: "120px" }}
-              />
+              <img src={Pr1} className="card-img-top" alt="..." />
               <div className="card">
                 <div className="card-header">TextFormatter</div>
                 <a
@@ -81,7 +75,7 @@ function Project(props) {
                 src={Pr2}
                 className="card-img-top"
                 alt="..."
-                style={{ height: "120px" }}
+                style={{ height: "136px" }}
               />
               <div className="card">
                 <div className="card-header">NewsWebsite</div>
@@ -125,7 +119,7 @@ function Project(props) {
                 src={Pr3}
                 className="card-img-top"
                 alt="..."
-                style={{ height: "120px" }}
+                style={{ height: "136px" }}
               />
               <div className="card">
                 <div className="card-header">SpotifyClone</div>
@@ -146,7 +140,7 @@ function Project(props) {
                 src={Pr4}
                 className="card-img-top"
                 alt="..."
-                style={{ height: "120px" }}
+                style={{ height: "136px" }}
               />
               <div className="card">
                 <div className="card-header">CRUD Application</div>
@@ -167,7 +161,7 @@ function Project(props) {
                 src={Pr6}
                 className="card-img-top"
                 alt="..."
-                style={{ height: "120px" }}
+                style={{ height: "136px" }}
               />
               <div className="card">
                 <div className="card-header">MovieApplication</div>

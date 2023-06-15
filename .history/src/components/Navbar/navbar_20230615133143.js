@@ -120,7 +120,7 @@ const Navbar = (props) => {
                 Projects
               </li>
             </ul>
-            <div className="form-check form-switch p-1 enable">
+            <div className="form-check form-switch p-1">
               <input
                 className="form-check-input"
                 type="checkbox"

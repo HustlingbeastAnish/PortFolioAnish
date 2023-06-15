@@ -29,7 +29,7 @@ const Experience = (props) => {
         className="skills1"
         style={{
           backgroundColor: props.mode === "light" ? "gray" : "black",
-          height: "auto",
+          height="auto"
         }}
       >
         <div className="container d-flex flex-column align-items-center mt-4 text-dark">

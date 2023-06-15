@@ -29,7 +29,6 @@ const Experience = (props) => {
         className="skills1"
         style={{
           backgroundColor: props.mode === "light" ? "gray" : "black",
-          height: "auto",
         }}
       >
         <div className="container d-flex flex-column align-items-center mt-4 text-dark">
@@ -40,7 +39,7 @@ const Experience = (props) => {
           >
             Skills!
           </h1>
-          <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4">
+          <div className="container d-flex flex-wrap justify-content-center mt-3">
             <div className="card m-3 p-2" style={{ width: "18rem" }}>
               <motion.div className="card-img-top" whileHover={{ scale: 1.1 }}>
                 <img

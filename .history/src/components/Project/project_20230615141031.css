@@ -7,7 +7,7 @@
   align-items: center;
   flex-direction: column;
 }
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   /* Small screens (576px and up) */
   .grid-row {
     display: grid;
@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (min-width: 1250px) {
+@media (max-width: 1250px) {
   /* Medium screens (768px and up) */
   .grid-row {
     display: grid;
@@ -25,7 +25,7 @@
   }
 }
 
-@media screen and (min-width: 1251px) {
+@media (min-width: 1251px) {
   /* Large screens (992px and up) */
   .grid-row {
     display: grid;

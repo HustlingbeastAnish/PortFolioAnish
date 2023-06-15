@@ -42,7 +42,7 @@ function Project(props) {
         className="containerProj"
         style={{
           backgroundColor: props.mode === "light" ? "gray" : "black",
-          height: "auto",
+          height:"auto";
         }}
       >
         <MyVerticallyCenteredModal

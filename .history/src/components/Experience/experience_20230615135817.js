@@ -40,7 +40,8 @@ const Experience = (props) => {
           >
             Skills!
           </h1>
-          <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4">
+                  <div className="row grid-row">
+          <div className="col grid-col">
             <div className="card m-3 p-2" style={{ width: "18rem" }}>
               <motion.div className="card-img-top" whileHover={{ scale: 1.1 }}>
                 <img

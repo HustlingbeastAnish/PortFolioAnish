@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (max-width: 1250px) {
   /* Medium screens (768px and up) */
   .grid-row {
     display: grid;
